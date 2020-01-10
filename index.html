@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC Product Landing Page - Sabrina's Art Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div id="home"></div>
+        <img
+          id="header-img"
+          src="images/titlewhite.jpg"
+          alt="Acrylic Painting by Sabrina Markon"
+        />
+        <nav id="nav-bar">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div id="video-container">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/watch?v=nsXuGvfMj64"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="bobross">
+          Just some wholesome Bob Ross moments...
+        </div>
+        <section id="gallery">
+          <h1>Gallery</h1>
+          <div id="grid">
+            <div class="grid-item">
+              <img
+                class="painting"
+                src="images/GalaxyTree-Dec2019.jpg"
+                alt="Galaxy Tree"
+              />
+            </div>
+            <div class="grid-item">
+              <img class="painting" src="images/Crow-Dec2019.jpg" alt="Crow" />
+            </div>
+            <div class="grid-item">
+              <img class="painting" src="images/Orbit-2018.jpg" alt="Orbits" />
+            </div>
+            <div class="grid-item">
+              <img
+                class="painting"
+                src="images/PinkBlossoms-2018.jpg"
+                alt="Forest Blossoms & Waterfall"
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                class="painting"
+                src="images/SunlitStream-2018.jpg"
+                alt="Sunlit Stream & Lavender"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <h1>Contact</h1>
+          <form
+            id="form"
+            method="post"
+            action="https://www.freecodecamp.com/email-submit"
+          >
+            <label for="username">Username (if you have one):</label>
+            <input
+              type="text"
+              name="username"
+              maxlength="32"
+              placeholder="Username"
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              maxlength="255"
+              placeholder="Email"
+            />
+            <label for="subject">Message Subject:</label>
+            <input
+              type="text"
+              name="subject"
+              maxlength="255"
+              placeholder="Message Subject"
+            />
+            <label for="message">Message Body:</label>
+            <textarea name="message" rows="20" cols="50">Message Body</textarea>
+            <input type="submit" id="submit" value="Send" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        &copy;2020
+        <a id="footer-link" href="http://sabrinamarkon.com">Sabrina Markon</a>
+      </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
