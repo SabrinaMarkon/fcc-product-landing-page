@@ -45,14 +45,27 @@ footer {
   margin: 20px;
 }
 
-#footer-link {
+.madewithlove {
+  margin-top: 1rem;
+  font: normal 1.2rem "Roboto", sans-serif;
+  color: #fff;
+}
+
+.madewithlove a {
   color: #e14658;
   font-weight: bold;
   text-decoration: none;
 }
 
-#footer-link:hover,
-.nav-link:hover {
+.madewithlove a:hover {
+  color: #ffff00;
+}
+
+.madewithlove__heart {
+  color: #e14658;
+}
+
+.madewithlove__heart:hover {
   color: #ffff00;
 }
 
